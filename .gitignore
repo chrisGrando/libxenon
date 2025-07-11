@@ -6,4 +6,10 @@ toolchain/build.log
 toolchain/*.tar.gz
 toolchain/*.tar.bz2
 toolchain/*.tar.xz
+toolchain/binutils-2.32/
+toolchain/ext2fs-xenon/
+toolchain/fat-xenon/
+toolchain/gcc-9.2.0/
+toolchain/newlib-3.1.0/
+toolchain/xtaflib/
 docs/

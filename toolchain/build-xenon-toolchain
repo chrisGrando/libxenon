@@ -290,7 +290,8 @@ bzip2_install()
     echo -e "Building $BZIP2..."
     make $PARALLEL >> $LOGFILE 2>&1 || fail_with_info
     echo -e "Installing $BZIP2..."
-    make install >> $LOGFILE 2>&1 || fail_with_info
+    make PREFIX=$PREFIX install >> $LOGFILE 2>&1 || fail_with_info
+    cp --remove-destination $PREFIX/include/bzlib.h $PREFIX/usr/include/bzlib.h
     cd ..
     rm -rf $BZIP2
     echo -e "Done"
